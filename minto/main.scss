@@ -1,10 +1,260 @@
-.wrapper{
-    max-width: 1170px;
+$primary-color: #9782ad;
+$buttons: #82699d;
+$onHover: #a796ba;
+$p-text: #979797;
+$caption-color: #424243;
+$quote: #484747;
+$first-halo: #dfdfdf;
+$second-halo: #e9e9e9;
+$foter-color: #e7e7e7;
+
+// --------HEADER---------
+
+header{
+    border-bottom: 4px solid $primary-color;
+}
+.conteiner{
+    max-width: 970px;
     margin: 0 auto;
 }
+.wrapp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .logo{
-    
+    margin-top: 8px;
+    margin-left: 38px;
+    margin-bottom: 18px;
 }
 .leftText{
+    text-transform: uppercase;
+    margin-left: 77px;
+    align-items: center;
+
+    h2{
+        font-size: 38px;
+        font-weight: 400;
+        color: $primary-color;
+        margin-top: 73px;
+    }
+}
+
+// ----------CONTENT-----------
+
+.promo{
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+}
+.lilLogo{
+    align-items: center; 
+    margin-left: 79px;
+}
+.logoText{
+    text-transform: uppercase;
+    align-items: center;
+
+    h3{
+        font-weight: 400;
+        margin-left: 10px;
+        color: $primary-color;
+    }
+}
+
+.menuItems{
+    margin-left: 55px;
+    margin-top: 17px;
+    i{
+        margin-right: 4px;
+        color: $primary-color; 
+    }
+}
+.menuItems:last-child{
+    margin-right: 75px;
+}
+.menu{
+    list-style: none;
+    display: flex;
+}
+.menuLink{
+    color: $primary-color;
+}
+.menuLink:hover{
+    color: $caption-color;
+}
+
+//--- БАННЕР-----------
+
+.banerWrapp{
+    display: flex;
+    justify-content: center;
+}
+
+// Картинка с кнопками
+.banner{
+    width: 820px;
+    height: 390px;
+    background-image: url(img/fon.png);
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+//  Кнопка странна нажимается
+//  Как исправить?
+button{
+    width: 27px;
+    height: 54px;
+    background: $buttons;
+    border: none;
+}
+button:hover{
+    background: $onHover;
+    cursor: pointer;
+}
+// -------Левая кнопка--------
+.leftArr{
+    margin-top: -5px;
     
+    i{
+        margin-left: -3px;
+        font-size: 40px;
+        color: #e9e9e9;
+    }
+}
+// --------Правая кнопка-------
+.leftRight{ 
+    margin-left: -28px;
+    margin-top: -5px;
+    
+    i{
+        margin-left: -3px;
+        font-size: 40px;
+        color: #e9e9e9;
+    }
+}
+
+// Текст под картинкой
+
+.bannerText{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    border-bottom: 1px solid $p-text;
+    border-top: 1px solid $p-text;
+}
+.importantText{
+    width: 746px;
+    color: $caption-color;
+    text-align: center;
+    line-height: 1.85em;
+    b{
+        color: $primary-color;
+    }
+}
+
+// Круглая картинка с текстом
+
+.circleBanner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.circle{
+    border: 5px solid $second-halo;
+    border-radius: 50%;
+    margin-left: 74px;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    img{
+        border: 5px solid $first-halo;
+        border-radius: 50%;
+    }
+}
+.importantParagraf{
+    margin-right: 78px;
+}
+.contImportantPar{
+    margin-left: 38px;
+    margin-top: 45px;
+    line-height: 1.85em;
+    color: $p-text;
+    h3{
+        color: $caption-color;
+    }
+}
+.toBeContinued{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+    a{
+        color: inherit;
+    }
+    a:hover{
+        color: $caption-color;
+    }
+}
+
+//-------Блок где ты был
+
+.where{
+    display: flex;
+}
+.messege{
+    width: 338px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: $caption-color;
+}
+.line{
+    width: 100%;
+    height: 25px;
+    border-bottom: 1px solid $second-halo;
+}
+
+// -------Спонсоры
+
+.sponsorsWrapp{
+    img{
+        width: 994px;
+    }
+}
+
+// -------Футер
+
+footer{
+    margin-top: 33px;
+    background-color: $foter-color;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    color: $p-text; 
+    h5{
+        font-weight: 200;
+    }
+}
+.social{
+    display: flex;
+}
+.fb{
+
+    a{
+        color: $primary-color;
+    }
+}
+.tvit{
+    margin-left: 12px;
+
+    a{
+        color: $primary-color;
+    }
+}
+
+.violet{
+    width: 100%;
+    height: 5px;
+    background-color: $primary-color;
 }
