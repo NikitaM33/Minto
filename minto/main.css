@@ -2,50 +2,62 @@ header {
   border-bottom: 4px solid #9782ad;
 }
 
-.conteiner {
+.wrapper {
   max-width: 970px;
   margin: 0 auto;
 }
 
 .wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .logo {
   margin-top: 8px;
-  margin-left: 38px;
+  margin-left: -50px;
   margin-bottom: 18px;
+}
+
+.logo img {
+  width: 330px;
+  height: 330px;
 }
 
 .leftText {
   text-transform: uppercase;
-  margin-left: 77px;
-  align-items: center;
+  margin-left: 130px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .leftText h2 {
   font-size: 38px;
   font-weight: 400;
   color: #9782ad;
-  margin-top: 73px;
+  margin-top: 16px;
 }
 
 .promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 17px;
-}
-
-.lilLogo {
-  align-items: center;
-  margin-left: 79px;
+  margin-bottom: 17px;
 }
 
 .logoText {
   text-transform: uppercase;
-  align-items: center;
 }
 
 .logoText h3 {
@@ -54,23 +66,20 @@ header {
   color: #9782ad;
 }
 
+.menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .menuItems {
   margin-left: 55px;
-  margin-top: 17px;
 }
 
 .menuItems i {
   margin-right: 4px;
   color: #9782ad;
-}
-
-.menuItems:last-child {
-  margin-right: 75px;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
 }
 
 .menuLink {
@@ -82,18 +91,28 @@ header {
 }
 
 .banerWrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .banner {
-  width: 820px;
-  height: 390px;
+  width: 970px;
+  height: 461px;
   background-image: url(img/fon.png);
   background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 button {
@@ -130,9 +149,13 @@ button:hover {
 }
 
 .bannerText {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 30px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-bottom: 1px solid #979797;
   border-top: 1px solid #979797;
 }
@@ -149,21 +172,32 @@ button:hover {
 }
 
 .circleBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .circle {
   border: 5px solid #e9e9e9;
   border-radius: 50%;
   margin-left: 74px;
-  margin-top: 18px;
+  margin-top: -73px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .circle img {
+  width: 230px;
   border: 5px solid #dfdfdf;
   border-radius: 50%;
 }
@@ -174,7 +208,7 @@ button:hover {
 
 .contImportantPar {
   margin-left: 38px;
-  margin-top: 45px;
+  margin-top: 50px;
   line-height: 1.85em;
   color: #979797;
 }
@@ -184,8 +218,12 @@ button:hover {
 }
 
 .toBeContinued {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-top: 8px;
 }
 
@@ -198,6 +236,8 @@ button:hover {
 }
 
 .where {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -214,8 +254,20 @@ button:hover {
   border-bottom: 1px solid #e9e9e9;
 }
 
+.sponsorsWrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .sponsorsWrapp img {
-  width: 994px;
+  width: 241px;
+  height: 70px;
+  border: 1px solid #efefef;
+}
+
+.sponsorsWrapp a:hover {
+  opacity: .75;
 }
 
 footer {
@@ -224,8 +276,12 @@ footer {
 }
 
 .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #979797;
 }
 
@@ -234,6 +290,8 @@ footer {
 }
 
 .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
